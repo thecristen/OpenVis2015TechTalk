@@ -4,10 +4,10 @@
 	<head>
 		<meta charset="utf-8">
 
-		<title>reveal.js - The HTML Presentation Framework</title>
+		<title>OpenVis Conf 2015 ABRIDGED</title>
 
-		<meta name="description" content="A framework for easily creating beautiful presentations using HTML">
-		<meta name="author" content="Hakim El Hattab">
+		<meta name="description" content="A short talk highlighting some key ideas from the 2015 OpenVis Conference.">
+		<meta name="author" content="Cristen Blair Jones">
 
 		<meta name="apple-mobile-web-app-capable" content="yes" />
 		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
@@ -15,7 +15,41 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
 
 		<link rel="stylesheet" href="css/reveal.css">
-		<link rel="stylesheet" href="css/theme/sky.css" id="theme">
+		<link rel="stylesheet" href="css/theme/moon.css" id="theme">
+
+		<!-- Custom data states -->
+		<style type="text/css">
+		.reveal h2.title {
+			float:left;
+			font-size: 1.3em;
+			text-align: left;
+			position: relative;
+			top: -30px;
+		  left: -30px;
+		}
+		.reveal h3.title {
+			font-size: 1em;
+			text-align:right;
+			float:right;
+			font-weight: normal;
+			position: relative;
+			top: -30px;
+		  right: -30px;
+		}
+
+		.reveal .title {
+			-webkit-animation: fadeAway 25s linear forwards;
+		}
+
+		@-webkit-keyframes fadeAway {
+	    from {
+	        opacity: 1;
+	    }
+	    to {
+	        opacity: 0.3;
+	    }
+		}
+		</style>
 
 		<!-- Code syntax highlighting -->
 		<link rel="stylesheet" href="lib/css/zenburn.css">
@@ -38,185 +72,505 @@
 
 		<div class="reveal">
 
-			<!-- Any section element inside of this container is displayed as a slide -->
 			<div class="slides">
 				<section>
-					<h1>Reveal.js</h1>
-					<h3>The HTML Presentation Framework</h3>
+					<h1>OpenVis Conf 2015</h1>
+					<h3>Abridged</h3>
 					<p>
-						<small>Created by <a href="http://hakim.se">Hakim El Hattab</a> / <a href="http://twitter.com/hakimel">@hakimel</a></small>
+						<small>Presented by <a href="http://cristen.thejonesgroup.org">Cristen Jones</a> / MITRE</small>
 					</p>
 				</section>
 
 				<section>
-					<h2>Hello There</h2>
-					<p>
-						reveal.js enables you to create beautiful interactive slide decks using HTML. This presentation will show you examples of what it can do.
-					</p>
+					<h2>In a nutshell</h2>
+					<blockquote cite="http://openvisconf.com">...you will hear about best practices for designing effective data visualization, telling stories with data, and structuring and building data visualization using the latest and greatest technology and tools on the Open Web.</blockquote>
+					<ul>
+						<li>Mixed attendance of developers, journalists, academics.</li>
+						<li>Single-track conference, 9AM - 5PM Monday and Tuesday.</li>
+						<li>21 talks total (find info on breakdown of speakers/talks)
+						</li>
+						<li>Hosted by Bocoup, an Open Web technology company.</li>
+					</ul>
 				</section>
 
-				<!-- Example of nested vertical slides -->
 				<section>
+				<div class="stretch">
+					<iframe width="100%" height="100%" src="http://openvisconf.com/#videos"></iframe>
+				</div>
+				</section>
+
+				<!-- Information is cool -->
+
+				<!-- A single talk gets covered in 3 vertical slides -->
+				<section data-background="#013E15">
+
+					<h2 class="title">What is the Role of Visualization in Prediction?</h2><h3 class="title">Adam Perer</h3>
 					<section>
-						<h2>Vertical Slides</h2>
-						<p>Slides can be nested inside of each other.</p>
-						<p>Use the <em>Space</em> key to navigate through all slides.</p>
-						<br>
-						<a href="#" class="navigate-down">
-							<img width="178" height="238" data-src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Down arrow">
-						</a>
+					<aside class="notes">Adam is a Research Scientist at IBM, working in the Healthcare Analytics Research Group. His research focuses on the design of novel visual analytics systems.</aside>
 					</section>
+
 					<section>
-						<h2>Basement Level 1</h2>
-						<p>Nested slides are useful for adding additional detail underneath a high level horizontal slide.</p>
+						<h2>Predictive Modeling Pipeline</h2>
+
 					</section>
+
 					<section>
-						<h2>Basement Level 2</h2>
-						<p>That's it, time to go back up.</p>
-						<br>
-						<a href="#/2">
-							<img width="178" height="238" data-src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Up arrow" style="-webkit-transform: rotate(180deg);">
-						</a>
+						<h2>Healthcare stuff!</h2>
+
 					</section>
+
 				</section>
 
-				<section>
-					<h2>Slides</h2>
-					<p>
-						Not a coder? Not a problem. There's a fully-featured visual editor for authoring these, try it out at <a href="http://slides.com" target="_blank">http://slides.com</a>.
-					</p>
-				</section>
+				<!-- A single talk gets covered in 3 vertical slides -->
+				<section data-background="#013E15">
 
-				<section>
-					<h2>Point of View</h2>
-					<p>
-						Press <strong>ESC</strong> to enter the slide overview.
-					</p>
-					<p>
-						Hold down alt and click on any element to zoom in on it using <a href="http://lab.hakim.se/zoom-js">zoom.js</a>. Alt + click anywhere to zoom back out.
-					</p>
-				</section>
-
-				<section>
-					<h2>Touch Optimized</h2>
-					<p>
-						Presentations look great on touch devices, like mobile phones and tablets. Simply swipe through your slides.
-					</p>
-				</section>
-
-				<section data-markdown>
-					<script type="text/template">
-						## Markdown support
-
-						Write content using inline or external Markdown.
-						Instructions and more info available in the [readme](https://github.com/hakimel/reveal.js#markdown).
-
-						```
-						<section data-markdown>
-						  ## Markdown support
-
-						  Write content using inline or external Markdown.
-						  Instructions and more info available in the [readme](https://github.com/hakimel/reveal.js#markdown).
-						</section>
-						```
-					</script>
-				</section>
-
-				<section>
-					<section id="fragments">
-						<h2>Fragments</h2>
-						<p>Hit the next arrow...</p>
-						<p class="fragment">... to step through ...</p>
-						<p><span class="fragment">... a</span> <span class="fragment">fragmented</span> <span class="fragment">slide.</span></p>
-
-						<aside class="notes">
-							This slide has fragments which are also stepped through in the notes window.
-						</aside>
-					</section>
+					<h2 class="title">Why Exploring Big Data Is Hard (And What We Can Do About It)</h2><h3 class="title">Danyel Fisher</h3>
 					<section>
-						<h2>Fragment Styles</h2>
-						<p>There's different types of fragments, like:</p>
-						<p class="fragment grow">grow</p>
-						<p class="fragment shrink">shrink</p>
-						<p class="fragment roll-in">roll-in</p>
-						<p class="fragment fade-out">fade-out</p>
-						<p class="fragment current-visible">current-visible</p>
-						<p class="fragment highlight-red">highlight-red</p>
-						<p class="fragment highlight-blue">highlight-blue</p>
+					<aside class="notes">Danyel is a researcher at Microsoft Research, focusing on information and data visualization.</aside>
 					</section>
+
+					<section>
+						<h2>Such Microsoft Stack</h2>
+
+
+					</section>
+
+					<section>
+						<h2>So data</h2>
+
+					</section>
+
 				</section>
 
-				<section id="transitions">
-					<h2>Transition Styles</h2>
-					<p>
-						You can select from different transitions, like: <br>
-						<a href="?transition=none#/transitions">None</a> -
-						<a href="?transition=fade#/transitions">Fade</a> -
-						<a href="?transition=slide#/transitions">Slide</a> -
-						<a href="?transition=convex#/transitions">Convex</a> -
-						<a href="?transition=concave#/transitions">Concave</a> -
-						<a href="?transition=zoom#/transitions">Zoom</a>
-					</p>
+				<!-- A single talk gets covered in 3 vertical slides -->
+				<section data-background="#013E15">
+
+					<h2 class="title">Mapping the Cosmos: Visualizing Millions of Objects in Space</h2><h3 class="title">Ian Webster</h3>
+					<section>
+						<aside class="notes">Ian is a software engineer at Google.</aside>
+					</section>
+
+					<section>
+						<h2>Asterank.com</h2>
+
+					</section>
+
+					<section>
+						<h2>"<em>How</em> old are you?"</h2>
+						<p>Haha.</p>
+
+					</section>
+
 				</section>
 
-				<section id="themes">
-					<h2>Themes</h2>
-					<p>
-						reveal.js comes with a few themes built in: <br>
-						<!-- Hacks to swap themes after the page has loaded. Not flexible and only intended for the reveal.js demo deck. -->
-						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/black.css'); return false;">Black (default)</a> -
-						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/white.css'); return false;">White</a> -
-						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/league.css'); return false;">League</a> -
-						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/sky.css'); return false;">Sky</a> -
-						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/beige.css'); return false;">Beige</a> -
-						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/simple.css'); return false;">Simple</a> <br>
-						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/serif.css'); return false;">Serif</a> -
-						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/night.css'); return false;">Night</a> -
-						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/moon.css'); return false;">Moon</a> -
-						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/solarized.css'); return false;">Solarized</a>
-					</p>
+				<!-- A single talk gets covered in 3 vertical slides -->
+				<section data-background="#013E15">
+
+					<h2 class="title">So You Think You Can Scroll</h2><h3 class="title">Jim Vallandingham</h3>
+					<section>
+					<aside class="notes">Jim is a visualization developer and data analyst working at Bocoup.</aside>
+					</section>
+
+					<section>
+						<h2>A long history</h2>
+
+					</section>
+
+					<section>
+						<h2>Inconsistent Metaphor?</h2>
+
+
+					</section>
+
 				</section>
 
-				<section>
-					<section data-background="#dddddd">
-						<h2>Slide Backgrounds</h2>
-						<p>
-							Set <code>data-background="#dddddd"</code> on a slide to change the background color. All CSS color formats are supported.
-						</p>
-						<a href="#" class="navigate-down">
-							<img width="178" height="238" data-src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Down arrow">
-						</a>
+				<!-- A single talk gets covered in 3 vertical slides -->
+				<section data-background="#013E15">
+
+					<h2 class="title">A Bit About Touch</h2><h3 class="title">Ramik Sadana</h3>
+					<section>
+					<aside class="notes">Ramik is a Ph.D. student at Georgia Tech.</aside>
 					</section>
-					<section data-background="https://s3.amazonaws.com/hakim-static/reveal-js/image-placeholder.png">
-						<h2>Image Backgrounds</h2>
-						<pre><code>&lt;section data-background="image.png"&gt;</code></pre>
+
+					<section>
+						<h2>So many screen sizes</h2>
+
 					</section>
-					<section data-background="https://s3.amazonaws.com/hakim-static/reveal-js/image-placeholder.png" data-background-repeat="repeat" data-background-size="100px">
-						<h2>Tiled Backgrounds</h2>
-						<pre><code style="word-wrap: break-word;">&lt;section data-background="image.png" data-background-repeat="repeat" data-background-size="100px"&gt;</code></pre>
+
+					<section>
+						<h2>Usefulness, Usability, Desirability</h2>
+
 					</section>
-					<section data-background-video="https://s3.amazonaws.com/static.slid.es/site/homepage/v1/homepage-video-editor.mp4,https://s3.amazonaws.com/static.slid.es/site/homepage/v1/homepage-video-editor.webm" data-background-color="#000000">
-						<div style="background-color: rgba(0, 0, 0, 0.9); color: #fff; padding: 20px;">
-							<h2>Video Backgrounds</h2>
-							<pre><code style="word-wrap: break-word;">&lt;section data-background-video="video.mp4,video.webm"&gt;</code></pre>
-						</div>
-					</section>
+
 				</section>
 
-				<section data-transition="slide" data-background="#4d7e65" data-background-transition="zoom">
-					<h2>Background Transitions</h2>
-					<p>
-						Different background transitions are available via the backgroundTransition option. This one's called "zoom".
-					</p>
-					<pre><code>Reveal.configure({ backgroundTransition: 'zoom' })</code></pre>
+				<!-- More storytelling types of stuff -->
+
+				<!-- A single talk gets covered in 3 vertical slides -->
+				<section data-background="#472B01">
+
+					<h2 class="title">User-Centered Visualization Research</h2><h3 class="title">Lane Harrison</h3>
+					<section>
+						<aside class="notes">Lane is a postdoc at the Visual Analytics Lab at Tufts.</aside>
+					</section>
+
+					<section>
+						<h2>Models</h2>
+
+
+					</section>
+
+					<section>
+						<h2>Testing Models</h2>
+
+					</section>
+
 				</section>
 
-				<section data-transition="slide" data-background="#b5533c" data-background-transition="zoom">
-					<h2>Background Transitions</h2>
-					<p>
-						You can override background transitions per-slide.
-					</p>
-					<pre><code style="word-wrap: break-word;">&lt;section data-background-transition="zoom"&gt;</code></pre>
+				<!-- A single talk gets covered in 3 vertical slides -->
+				<section data-background="#472B01">
+
+					<h2 class="title">Storytelling and Data: Why? How? When?</h2><h3 class="title">Robert Kosara</h3>
+					<section>
+					<aside class="notes">Robert is a research analyst at Tableau.</aside>
+					</section>
+
+					<section>
+						<h2>Stories make you pay attention</h2>
+
+					</section>
+
+					<section>
+						<h2>Zeigarnik effect</h2>
+						<p>And so on</p>
+
+					</section>
+
+				</section>
+
+				<!-- A single talk gets covered in 3 vertical slides -->
+				<section data-background="#472B01">
+
+					<h2 class="title">The Human Side to being a Digital Practitioner</h2><h3 class="title">Jono Brandel</h3>
+					<section>
+					<aside class="notes">Jono is an artist working within the digital format.</aside>
+					</section>
+
+					<section>
+						<h2>(need to rewatch)</h2>
+
+					</section>
+
+					<section>
+						<h2>(still need to rewatch)</h2>
+
+
+					</section>
+
+				</section>
+
+				<!-- A single talk gets covered in 3 vertical slides -->
+				<section data-background="#472B01">
+
+					<h2 class="title">The Power of the Reveal</h2><h3 class="title">Hannah Fairfield</h3>
+					<section>
+						<aside class="notes">Hannah is a senior graphics editor at the New York Times.</aside>
+					</section>
+
+					<section>
+						<h2>()</h2>
+
+					</section>
+
+					<section>
+						<h2>()</h2>
+
+					</section>
+
+				</section>
+
+				<!-- A single talk gets covered in 3 vertical slides -->
+				<section data-background="#472B01">
+
+					<h2 class="title">That's the Power of Loops</h2><h3 class="title">Lena Groeger</h3>
+					<section>
+						<aside class="notes">Lena is a news applications developer at ProPublica.</aside>
+					</section>
+
+					<section>
+						<h2>Animated Gif time</h2>
+						<p>Include some useful ones too</p>
+
+					</section>
+
+					<section>
+						<h2>Sound loops too</h2>
+						<p>Aaahhhh embeds in memory...</p>
+
+					</section>
+
+				</section>
+
+				<!-- A single talk gets covered in 3 vertical slides -->
+				<section data-background="#472B01">
+
+					<h2 class="title">Using Humor in Inform</h2><h3 class="title">Nigel Holmes</h3>
+					<section>
+						<aside class="notes">Nigel worked as graphics director for Time Magazine for 16 years and has written eight books on aspects of information design.</aside>
+					</section>
+
+					<section>
+						<h2>Tufte sux</h2>
+
+
+					</section>
+
+					<section>
+						<h2>Context is everything.</h2>
+						<p>I finally understand what it means.</p>
+
+					</section>
+
+				</section>
+
+				<!-- Tech!!! -->
+
+				<!-- A single talk gets covered in 3 vertical slides -->
+				<section data-background="#021345">
+					<h2 class="title">Learning While Making p5.js</h2><h3 class="title">Lauren McCarthy</h3>
+					<section>
+						<aside class="notes">Lauren is an artist and programmer and a full-time faculty at NYU ITP (Interactive Telecommunications Program).</aside>
+					</section>
+
+					<section>
+						<h2>Interactive</h2>
+
+
+					</section>
+
+					<section>
+						<h2>Just Do Something</h2>
+
+
+					</section>
+
+				</section>
+
+				<!-- A single talk gets covered in 3 vertical slides -->
+				<section data-background="#021345">
+
+					<h2 class="title">Motion Design with CSS</h2><h3 class="title">Val Head</h3>
+					<section>
+					<aside class="notes">Val is a designer and a leading figure in web interface animation.</aside>
+					</section>
+
+					<section>
+						<h2>Many states - need transitions!</h2>
+
+					</section>
+
+					<section>
+						<h2>The 12 principles</h2>
+						<p>Of animation</p>
+
+					</section>
+
+				</section>
+
+				<!-- A single talk gets covered in 3 vertical slides -->
+				<section data-background="#021345">
+
+					<h2 class="title">Building Earth: An Animated Map of Global Weather</h2><h3 class="title">Cameron Beccario</h3>
+					<section>
+					<aside class="notes">Cameron is a software engineer working in Tokyo, and a weather enthusiast.</aside>
+					</section>
+
+					<section>
+						<h2>Making it</h2>
+
+					</section>
+
+					<section>
+						<h2>What other people make it</h2>
+
+					</section>
+
+				</section>
+
+
+
+
+
+				<!-- A single talk gets covered in 3 vertical slides -->
+				<section data-background="#021345">
+
+					<h2 class="title">WebGL for Graphics and Data Visualization</h2><h3 class="title">Nicolas Garcia Belmonte</h3>
+					<section>
+					<aside class="notes">Nicolas is a Staff Data Visualization Engineer at Uber.</aside>
+					</section>
+
+					<section>
+						<h2>What's WebGL?</h2>
+
+					</section>
+
+					<section>
+						<h2>Real-time data analysis</h2>
+						<p>And art.</p>
+
+					</section>
+
+				</section>
+
+
+
+
+				<!-- A single talk gets covered in 3 vertical slides -->
+				<section data-background="#021345">
+
+					<h2 class="title">Weighing Performance Against Pain: SVG, Canvas and WebGL</h2><h3 class="title">Dominikus Baur</h3>
+					<section>
+					<aside class="notes">Dominikus is a data visualization and mobile interaction designer.</aside>
+					</section>
+
+					<section>
+						<h2>Why's the browser so slow?</h2>
+						<ul>
+							<li>The DOM?</li>
+
+						</ul>
+
+					</section>
+
+					<section>
+						<h2>WebGL against other things</h2>
+						<p>Hmmmm</p>
+
+					</section>
+
+				</section>
+
+
+				<!-- A single talk gets covered in 3 vertical slides -->
+				<section data-background="#021345">
+
+					<h2 class="title">Interactive Datavis with React: Taming the Complexity of the Changing State</h2><h3 class="title">Ilya Boyandin</h3>
+					<section>
+					<aside class="notes">Ilya is a data visualization engineer at Interactive Things.</aside>
+					</section>
+
+					<section>
+						<h2>Why is interactivity hard?</h2>
+
+
+					</section>
+
+					<section>
+						<h2>How React helps</h2>
+
+					</section>
+
+				</section>
+
+
+				<!-- A single talk gets covered in 3 vertical slides -->
+				<section data-background="#021345">
+
+					<h2 class="title">Moebio Framework + Lichen</h2><h3 class="title">Santiago Ortiz</h3>
+					<section>
+					<aside class="notes">Santiago is a data scientist and information visualization researcher specialized in exploratory information visualization, knowledge maps, and visual data science.</aside>
+					</section>
+
+					<section>
+						<h2>(Some good point)</h2>
+
+					</section>
+
+					<section>
+						<h2>(Another good point)</h2>
+
+					</section>
+
+				</section>
+
+
+				<!-- A single talk gets covered in 3 vertical slides -->
+				<section data-background="#021345">
+
+					<h2 class="title">Raising the Bar (Chart)</h2><h3 class="title">Jeffrey Heer</h3>
+					<section>
+					<aside class="notes">Jeffrey is an Associate Professor of Computer Science and Engineering at the University of Washington and directs the Interactive Data Lab.</aside>
+					</section>
+
+					<section>
+						<h2>Visualization Grammar</h2>
+						<ul>
+							<li>Data</li>
+							<li>Transforms</li>
+							<li>Scales</li>
+							<li>Guides</li>
+							<li>Marks</li>
+						</ul>
+
+					</section>
+
+					<section>
+						<h2>An ecosystem of tools</h2>
+						<p>Vega!</p>
+
+					</section>
+
+				</section>
+
+				<!-- Useful stuff -->
+
+				<!-- A single talk gets covered in 3 vertical slides -->
+				<section data-background="#4B0202">
+
+					<h2 class="title">Data Visualization on a Deadline</h2><h3 class="title">Alyson Hurt</h3>
+					<section>
+						<aside class="notes">Alyson is a graphics editor on NPR's Visuals team.</aside>
+					</section>
+
+					<section>
+						<h2>Pre-prepare parts</h2>
+						<ul>
+							<li>Boilerplate README</li>
+							<li>Style guide</li>
+							<li>Virtual environments</li>
+							<li>Apple scripts</li>
+							<li>App Template</li>
+						</ul>
+
+					</section>
+
+					<section>
+						<h2>Tools and processes</h2>
+
+					</section>
+
+				</section>
+
+				<!-- A single talk gets covered in 3 vertical slides -->
+				<section data-background="#4B0202">
+
+					<h2 class="title">Blindfolded Cartography</h2><h3 class="title">Andy Woodruff</h3>
+					<section>
+					<aside class="notes">Andy is a web cartographer working at Axis Maps.</aside>
+					</section>
+
+					<section>
+						<h2>Compromised Solutions</h2>
+
+
+					</section>
+
+					<section>
+						<h2>Expect holes!</h2>
+						<p>Big data is a design problem!</p>
+
+					</section>
+
 				</section>
 
 				<section>
@@ -240,137 +594,19 @@ function linkify( selector ) {
 					<p>Code syntax highlighting courtesy of <a href="http://softwaremaniacs.org/soft/highlight/en/description/">highlight.js</a>.</p>
 				</section>
 
-				<section>
-					<h2>Marvelous List</h2>
-					<ul>
-						<li>No order here</li>
-						<li>Or here</li>
-						<li>Or here</li>
-						<li>Or here</li>
-					</ul>
-				</section>
-
-				<section>
-					<h2>Fantastic Ordered List</h2>
-					<ol>
-						<li>One is smaller than...</li>
-						<li>Two is smaller than...</li>
-						<li>Three!</li>
-					</ol>
-				</section>
-
-				<section>
-					<h2>Tabular Tables</h2>
-					<table>
-						<thead>
-							<tr>
-								<th>Item</th>
-								<th>Value</th>
-								<th>Quantity</th>
-							</tr>
-						</thead>
-						<tbody>
-							<tr>
-								<td>Apples</td>
-								<td>$1</td>
-								<td>7</td>
-							<tr>
-							<tr>
-								<td>Lemonade</td>
-								<td>$2</td>
-								<td>18</td>
-							<tr>
-							<tr>
-								<td>Bread</td>
-								<td>$3</td>
-								<td>2</td>
-							<tr>
-						</tbody>
-					</table>
-				</section>
 
 				<section>
 					<h2>Clever Quotes</h2>
 					<p>
-						These guys come in two forms, inline: <q cite="http://searchservervirtualization.techtarget.com/definition/Our-Favorite-Technology-Quotations">
-						&ldquo;The nice thing about standards is that there are so many to choose from&rdquo;</q> and block:
+						User Centered Visualization Research - Lane Harrison. Perception, Cognitive States, Cognitive Traits (Personality) all affect the effectiveness of a visualization.
 					</p>
-					<blockquote cite="http://searchservervirtualization.techtarget.com/definition/Our-Favorite-Technology-Quotations">
-						&ldquo;For years there has been a theory that millions of monkeys typing at random on millions of typewriters would
-						reproduce the entire works of Shakespeare. The Internet has proven this theory to be untrue.&rdquo;
+					<blockquote cite="https://youtu.be/4TfqhK1gEp4">
+						&ldquo;Our innate perceptual and cognitive abilities should become an integral part of the next generation of visualization systems.&rdquo;
 					</blockquote>
 				</section>
 
-				<section>
-					<h2>Intergalactic Interconnections</h2>
-					<p>
-						You can link between slides internally,
-						<a href="#/2/3">like this</a>.
-					</p>
-				</section>
 
-				<section>
-					<h2>Speaker View</h2>
-					<p>There's a <a href="https://github.com/hakimel/reveal.js#speaker-notes">speaker view</a>. It includes a timer, preview of the upcoming slide as well as your speaker notes.</p>
-					<p>Press the <em>S</em> key to try it out.</p>
 
-					<aside class="notes">
-						Oh hey, these are some notes. They'll be hidden in your presentation, but you can see them if you open the speaker notes window (hit 's' on your keyboard).
-					</aside>
-				</section>
-
-				<section>
-					<h2>Export to PDF</h2>
-					<p>Presentations can be <a href="https://github.com/hakimel/reveal.js#pdf-export">exported to PDF</a>, here's an example:</p>
-					<iframe src="//www.slideshare.net/slideshow/embed_code/42840540" width="445" height="355" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:3px solid #666; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe>
-				</section>
-
-				<section>
-					<h2>Global State</h2>
-					<p>
-						Set <code>data-state="something"</code> on a slide and <code>"something"</code>
-						will be added as a class to the document element when the slide is open. This lets you
-						apply broader style changes, like switching the page background.
-					</p>
-				</section>
-
-				<section data-state="customevent">
-					<h2>State Events</h2>
-					<p>
-						Additionally custom events can be triggered on a per slide basis by binding to the <code>data-state</code> name.
-					</p>
-					<pre><code class="javascript" data-trim contenteditable style="font-size: 18px;">
-Reveal.addEventListener( 'customevent', function() {
-	console.log( '"customevent" has fired' );
-} );
-					</code></pre>
-				</section>
-
-				<section>
-					<h2>Take a Moment</h2>
-					<p>
-						Press B or . on your keyboard to pause the presentation. This is helpful when you're on stage and want to take distracting slides off the screen.
-					</p>
-				</section>
-
-				<section>
-					<h2>Much more</h2>
-					<ul>
-						<li>Right-to-left support</li>
-						<li><a href="https://github.com/hakimel/reveal.js#api">Extensive JavaScript API</a></li>
-						<li><a href="https://github.com/hakimel/reveal.js#auto-sliding">Auto-progression</a></li>
-						<li><a href="https://github.com/hakimel/reveal.js#parallax-background">Parallax backgrounds</a></li>
-						<li><a href="https://github.com/hakimel/reveal.js#keyboard-bindings">Custom keyboard bindings</a></li>
-					</ul>
-				</section>
-
-				<section style="text-align: left;">
-					<h1>THE END</h1>
-					<p>
-						- <a href="http://slides.com">Try the online editor</a> <br>
-						- <a href="https://github.com/hakimel/reveal.js">Source code &amp; documentation</a>
-					</p>
-				</section>
 
 			</div>
 
